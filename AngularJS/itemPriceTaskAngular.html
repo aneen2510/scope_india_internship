@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ng-options</title>
+    <script src="angularjs.min.js"></script>
+</head>
+
+<body ng-app>
+    <div ng-init="Products=[{name:'Pen',price:20},
+                            {name:'Pencil',price:10},
+                            {name:'Scale',price:12},
+                            {name:'Eraser',price:8}]">
+
+
+        <select ng-model="product" ng-options="product.name for product in Products"></select>
+        <select ng-model="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <p> {{product.name}}, Price = {{product.price*quantity}}</p>
+    </div>
+</body>
+
+</html>

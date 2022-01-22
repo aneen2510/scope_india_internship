@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+        .new{
+            border:3px solid black ;
+            height:700px;width:400px;
+            background-color: lightblue;
+    }
+        </style> 
+       </head>
+       <body>
+    
+    <form class="new">
+        <fieldset>
+            <legend><b>Purchases</b></legend>
+        <label>Product Name</label><br>
+            <select name="products">
+            <option value="">Select</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Clothing">Clothing</option>
+            </select><br>
+            <label>Quantity</label><br>
+            <input type="text" size=5px><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Personal Details</b></legend>
+            <label>First Name</label><br>
+            <input type="text"><br>
+                <label>Last Name</label><br>
+                <input type="text"><br>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Credit card Details</b></legend>
+                <label>Credit Card Type</label><br>
+                <input type="radio" value="VISA" name="cardtype">Visa<br>
+                <input type="radio" value="MASTER CARD" name="cardtype">Mastercard<br>
+                    <label>Credit Card Number</label><br>
+                    <input type="text"><br>
+                    <label>Expiry Date</label><br>
+                    <input type="date"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Billing Information</b></legend>
+                    <label>Postal Address</label><br>
+                    
+                    <textarea class="address" rows="4" cols="36"></textarea><br>
+                        <label>Home address
+                        <input type="checkbox">Same as Postal Address</label><br>
+                        <textarea rows="4" cols="36"></textarea>;<br>
+                        </fieldset>
+                
+            <input type="submit" value="Place my order">
+        </table>
+                    </form class="new">
+                
+                    
+</body>
+</html>
+

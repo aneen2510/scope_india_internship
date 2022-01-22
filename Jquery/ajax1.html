@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ajaxLoad</title>
+    <!--<script src="jquery.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#demo").load("test.txt", function(responseTxt, statusTxt, xhr){
+                    if (statusTxt == "success") {
+                        alert(responseTxt);
+            }
+                if (statusTxt == "error") {
+                alert("error");
+            }
+        });
+           
+             
+           })
+           
+    })
+    </script>
+</head>
+
+<body>
+    
+        <p id="demo"></p>
+       
+    
+    <button type="button">Click here to load</button>
+
+
+
+</body>
+
+</html>

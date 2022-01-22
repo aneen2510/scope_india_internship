@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+         input[type=submit] {
+        background-color:green;
+        color: white;
+        
+      }
+      input[type=button]{
+          background-color:red;
+      color: white;
+      }
+
+        .new{
+            border:2px double yellow ;
+            height:538px;width:500px;
+            background-color:black;
+            color: yellow;
+        }
+        
+             
+        </style> 
+       </head>
+       <body style="background-color: black;text-align: center;">
+        
+        <form class="new"> 
+            <h4 style="text-align: left;background-color: tomato;
+            width: 500px;
+            height: 30px
+            ;margin-block-start: 0em;">Sign Up</h4><br>   
+        <div1 style="padding-left: 10px;">      
+            <label>First Name   </label>
+            <input type="text" placeholder="Enter First Name" size="50px"><br><br>
+                <label  style="padding-left: 10px;">Last Name   </label>
+                <input type="text" placeholder="Enter Last Name" size="50px"/><br><br>
+                <label  style="padding-left: 0px;">Screen Name  </label>
+                <input type="text" placeholder="Enter Screen Name" size="50px"/><br><br>
+                
+              <label style="padding-left:20px">Date Of Birth</label>
+  <input type="month" placeholder="May"/>
+  <input type="number" min="1" max="31"  placeholder="5"/>
+  <input type="number" min="1800" max="2021" placeholder="1989"/><br><br>
+                <label  style="padding-right: 150px;">Gender</label>
+                <input type="radio" value="Male" name="gender" style="padding-right:80px;">Male
+                <input type="radio" value="Female" name="gender" style="padding-right: 40px;;">Female<br><br>
+                <label style="padding-right:200px;">Country</label>
+            <select name="country" style="padding-left:0px;">
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="Norway">Sweden</option>
+            <option value="Sweden">Norway</option>
+            </select><br><br>
+            <label style="padding-left: 45px;">E-mail</label>
+            <input type="email" placeholder="Enter E-mail"size="50px"/><br><br>
+            <label style="padding-left: 45px;"> Phone</label>
+            <input type="Phone" placeholder="Enter Phone" size="50px"/><br><br>
+            <label style="padding-left: 20px;">Password</label>
+            <input type="password" size="50px"><br><br>
+            <label style="padding-left: 0px;">Confirm Password</label>
+            <input type="password" size="30px" ><br><br>
+            <input type="checkbox" style="padding-left:0px;">I agree to the Terms of Use<br><br>
+            <h1 style="background-color: tomato;
+                width: 500px;
+                height: 40px;
+                text-align:right;
+                margin-block-start: 0em;  
+                margin-block-end: 0em;">
+            <input type="submit" value="Submit">
+            <input type="button" value="Cancel"></h1>
+        </div1>  
+         </form>
+       </body>
+</html>

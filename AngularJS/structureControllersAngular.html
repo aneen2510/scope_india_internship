@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>filters</title>
+    <script src="angularjs.min.js"></script>
+    <script>
+        angular.module('myApp', []).controller('mycontroller', mycontrollerfunction).controller('mycontroller1',mycontrollerfunction1)
+        
+
+        function mycontrollerfunction($scope) {
+            $scope.name = "Aneena"
+
+            $scope.sayHello = () => {
+                alert("Hello");
+            }
+            $scope.names = ['Anu', 'Manu'];
+        }
+        
+        function mycontrollerfunction1($scope) {
+            $scope.firstname = "Aneena"
+            $scope.lastname = "Antony"
+        }
+    </script>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="mycontroller">
+        <p>Hello {{name}}</p>
+        {{sayHello()}}
+        {{names}}
+    </div>
+    <div ng-controller="mycontroller1">
+        <p>{{firstname}} {{ lastname}}</p>
+    </div>
+
+</body>
+
+</html>

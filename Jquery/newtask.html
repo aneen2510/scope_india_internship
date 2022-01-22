@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+         input[type=submit] {
+        background-color:blue;
+        color: white;
+        
+      }
+      
+        .new{
+            border:2px double black ;
+            height:500px;width:500px;
+            background-color:lightgray;
+            color:black;
+            padding-inline:30px;
+        }
+        </style>
+        <script>
+        $(document).ready(function(){
+            $(".btn3").click(function(){
+             $("p").hide();
+           });
+           $(".btn5").click(function(){
+               $(".taskname3").hide();
+           })
+           $(".btn7").click(function(){
+               $(".taskname4").hide()
+           })
+    })  
+        </script> 
+       </head>
+       <body style="background-color:white;text-align: center;">
+        
+        
+        <form class="new" method="post" name="myForm" onsubmit="return validate()"> 
+            <h2 style="text-align:left;
+            width: 500px;height: 40px;">To Do List</h2><br>   
+           <div style="text-align: left;"style="background-color: darkgray; color: black;">
+            
+            <textarea rows="2" cols="26" input type="text" placeholder="Enter text"  
+            class="taskname1" ></textarea><br>
+
+            <input type="submit" value="Submit" id="btn1"><br><br>
+
+            <textarea rows="2" cols="26" input type="text" 
+            id="taskname2">Morning Excersise</textarea><br>
+
+            <input type="button" value="Edit" id="btn2">
+            <button class="btn9">Delete</button><br><br>
+
+            <textarea rows="2" cols="26" input type="text"   
+            class="taskname3">Vitamin Tablets</textarea><br>
+
+            <input type="button" value="Edit" id="btn4">
+            <input type="button" value="Delete" id="btn5"><br><br>
+
+            <textarea rows="2" cols="26" input type="text"  
+            class="taskname4" >Dance Practice</textarea><br>
+
+            <input type="button" value="Edit" id="btn6">
+            <input type="button" value="Delete" id="btn7"><br><br>
+        </div>
+        <p>thifgf</p>
+        <button class="btn3">Delete</button><br><br>
+
+       </body>
+</html>

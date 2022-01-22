@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blinkJQuery</title>
+    <!--<script src="jquery.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+       $(document).ready(function(){
+        function blink_text() {
+    $('.blink').fadeOut(100);
+    $('.blink').fadeIn(100);
+}
+setInterval(blink_text, 100);
+    })
+    </script>
+        </head>
+        <body>
+            <p class="blink">Welcome</p>
+        </body>
+</html>
+    

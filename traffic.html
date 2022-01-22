@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #isiqfor{
+        border: 5px solid black;
+        padding: 10px 3px;
+        width: 50px;
+    }
+    #isiqfor>div{
+        width:50px;
+        height: 50px;
+        border-radius: 70%;
+        opacity: .3;
+    }
+    .green{
+        background-color: green;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .red{
+        background-color: red;
+    }
+</style>
+    <script>
+        function myFun () {
+    var green=document.getElementsByClassName("green")[0];
+    var red=document.getElementsByClassName("red")[0];
+    var yellow=document.getElementsByClassName("yellow")[0];
+
+    green.style.opacity=1;
+    setTimeout(function () {
+        green.style.opacity=.3;
+        red.style.opacity=.3;
+        yellow.style.opacity=1;
+    },1000);
+
+    setTimeout(function () {
+        green.style.opacity=.3;
+        red.style.opacity=1;
+        yellow.style.opacity=.3;
+    },1500);
+
+    setTimeout(function () {
+        green.style.opacity=1;
+        red.style.opacity=.3;
+        yellow.style.opacity=.3;
+    },2000);
+
+
+}
+
+var timer = setInterval(function () {
+       myFun()
+},5000);
+    </script>
+</head>
+<body onload="timer;">
+
+<div id="isiqfor">
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

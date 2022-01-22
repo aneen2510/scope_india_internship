@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ToDoList</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        .new {
+            border: 2px double black;
+            height: 600px;
+            width: 300px;
+            background-color: lightgray;
+            color: black;
+            padding-inline: 30px;
+        }
+
+        input[type=submit] {
+            background-color: blue;
+            color: white;
+
+        }
+
+        li {
+            height: 25px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        #task {
+            height: 25px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        ul li:hover {
+            background: rgb(95, 86, 86);
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#btn3").click(function () {
+                $("#div1").hide();
+            });
+            $("#btn5").click(function () {
+                $("#div2").hide();
+            })
+            $("#btn7").click(function () {
+                $("#div3").hide()
+            })
+
+            $("#btn1").click(function () {
+                var item = $("#task").val();
+                $("ul").append('<li>' + item + '</li>')
+            })
+           
+        })  
+    </script>
+</head>
+
+<body style="background-color:white;text-align: center;">
+
+
+    <div class="new" name="myForm">
+        <h1 style="text-align:left;width: 500px;height: 40px;"><i>To Do List</i></h1><br>
+
+        <div style="text-align: left;" style="background-color: darkgray; color: black;">
+
+            <p><input type="text" id="task" placeholder="Enter new task" value=""></p>
+
+            <input type="submit" value="Click to Add" id="btn1"><br><br>
+
+            <ul>
+
+                <li id="div1">Electricity bill</li>
+
+                <input type="button" value="Edit" id="btn2">
+                <input type="button" value="Delete" id="btn3"><br><br>
+
+                <li id="div2">Vitamin Tablet</li>
+
+                <input type="button" value="Edit" id="btn4">
+                <input type="button" value="Delete" id="btn5"><br><br>
+
+                <li id="div3">Dance practice </li>
+
+                <input type="button" value="Edit" id="btn6">
+                <input type="button" value="Delete" id="btn7"><br><br>
+
+                
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

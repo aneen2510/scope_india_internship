@@ -1,0 +1,148 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-bind</title>
+    <script src="angularjs.min.js"></script>
+</head>
+<body ng-app>
+    <input type="text" ng-init='Name="Ganga"' ng-model="Name">
+    <p>Hello {{Name}}</p>
+    <p ng-bind="Name">Hello</p>
+   </body>
+</html>-->
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-click</title>
+    <script src="angularjs.min.js"></script>
+</head>
+<body ng-app>
+    <div ng-init="number=0">
+      <p>{{number}}</p> 
+      <button ng-click = "number=number+1">+1</button> 
+      <button ng-click = "number=number-1">-1</button>
+    </div>  
+</body>
+</html>-->
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-if</title>
+    <script src="angularjs.min.js"></script>
+</head>
+<body ng-app>
+    <div>
+        <label>
+            <input type="checkbox" ng-model="isCheck">Show result
+        </label>
+        <p ng-if="isCheck"> Successfully checked in!</p>
+    </div>  
+</body>
+</html>-->
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-class</title>
+    <script src="angularjs.min.js"></script>
+    <style>
+        .green{
+            background-color: lightgreen;
+            color: black;
+        }
+        .red{
+            background-color: lightcoral;
+            color: #000;
+        }
+    </style>
+</head>
+<body ng-app>
+    <div ng-init="number=25">
+        <input type="text" ng-model="guess"
+        ng-class="{red:guess!=number,green:guess==number}">
+    </div>
+</body>
+</html>-->
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-repeat</title>
+    <script src="angularjs.min.js"></script>
+    <style>
+        .green{
+           color: green;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+</head>
+<div ng-app ng-init="numbers=[1,2,3,4,5,6,7,8,9]">
+    
+    
+    <ul>
+      <li ng-repeat="item in numbers" ng-class="{red:item%2==0,green:item%2!=0}">
+        {{item }}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-options</title>
+    <script src="angularjs.min.js"></script>
+</head>
+<body ng-app>
+    <div ng-init="Students=[{name:'Anu',age:20,subject:'Java'},
+                  {name:'Manu',age:22,subject:'Python'},
+                  {name:'Sanu',age:23,subject:'php'}]">
+    <ul>
+        <li ng-repeat="student in Students">
+            Name:{{student.name}},Age:{{student.age}}
+        </li>
+    </ul>
+    <select ng-model="student" ng-options="student.name for student in Students"></select>
+    <p> You have selected {{student.name}} and the selected subject is {{student.subject}}</p>    
+    </div>  
+</body>
+</html> 
+
+
+
+
+
+

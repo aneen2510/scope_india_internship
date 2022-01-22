@@ -1,0 +1,115 @@
+++++++++++++++++++++++++++++MOUSE HOVER++++++++++++++++++++++++++++++++++
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+       div { a:hover{
+           display: inline;
+            color: lightsalmon;
+        }}
+        p{
+            display:none;
+            background-color: yellow;
+        }
+    </style>æ
+</head>
+<body>
+    <div>
+        <p>haii</p>
+        <a href="https://www.nav.no" target="_blank">nav.no</a>
+        </div>
+    </body>
+</html>
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++MOUSE HOVER++++++++++++++++++++++++++++++++++++++++++++
+
+!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+        ul{
+            list-style-type: none;
+            width: 150px;
+            background-color: lightsteelblue;
+        }
+        li a {
+            display:block;
+        }
+        li a:hover{
+            background-color: lime;
+            color: maroon;
+        }        }
+        </style> 
+       </head>
+       <body>
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="careers">Careers</a></li>
+        <li><a href="openings">Job openings</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+</body>
+</html>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++MEDIA SCREEN++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media</title>
+<style>
+body {
+  background-color:blue;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-color:yellowgreen;
+  }
+@media screen and (min-width: 800px){
+body{
+    background-color:rebeccapurple;
+}
+  }
+}
+</style>
+</head>
+<body>
+<h1>Hello</h1>
+</body>
+</html>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++MEDIA QUERY++++++++++++++++++++++++++++++++++
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mediaQuery</title>
+<style>
+    .left,.right{
+        float:left;
+        width: 20%;
+    }
+    .main{
+        float: left;
+        width: 60%;
+    }
+    @media screen and (max-width:800px) {
+        .left,.right,.main{
+            width: 100%;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="left" style="height: 50px;border: 1px solid rebeccapurple;background-color: salmon;"></div>
+    <div class="left" style="height: 50px;border: 1px solid rebeccapurple;background-color:powderblue;"></div>
+    <div class="left" style="height: 50px;border: 1px solid rebeccapurple;background-color:cyan;"></div>
+</body>
+</html>
+     

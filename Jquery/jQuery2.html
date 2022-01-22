@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition</title>
+    <!--<script src="jquery.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+       $(document).ready(function(){
+           $(".btn1").click(function(){
+             $("div").slideDown();
+           });
+           $(".btn2").click(function(){
+               $("div").slideUp();
+           })
+           $(".btn3").click(function(){
+               $("div").slideToggle()
+           })
+    })
+    </script>
+        </head>
+        <body>
+            <div style="background-color: darkseagreen;height: 200px;width: 200px;">Sample</div>
+    <button class="btn1">Click here to slideDown</button>
+    <button class="btn2">Click here to slideUp</button>
+    <button class="btn3">Click here to slideToggle</button>
+
+        </body>
+</html>
+    

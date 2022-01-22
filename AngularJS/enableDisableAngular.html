@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disable/enable</title>
+    <script src="angularjs.min.js"></script>
+    <style>
+        .new {
+            border: 5px double darkblue;
+            height: 250px;
+            width: 400px;
+            background-color: lightblue;
+            color: black;
+            padding: 30px
+        }
+    </style>
+</head>
+<body ng-app>
+    <div class="new">
+        <h2>Registration Form</h2>
+        <label>Mobile Number</label>
+        <input type="Phone" placeholder="Enter Phone" name="phone" /><br><br>
+        <label>Password</label>
+        <input type="password" name="password"><br><br>
+        <input type="checkbox" ng-model="IsDisabled">I agree to the terms and conditions<br /><br />
+        <input type="button" ng-disabled ="!IsDisabled" value="Submit">
+        <input type="button" ng-disabled ="!IsDisabled" value="Cancel">
+    </div>
+    <script>
+    </script>
+</body>
+</html>
